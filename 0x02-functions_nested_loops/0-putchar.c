@@ -4,6 +4,9 @@
  *
  * Return: Always 0 (Success)
  */
+
+ char _putchar();
+
 int main(void)
 {
 	char *sh = "_putchar";
