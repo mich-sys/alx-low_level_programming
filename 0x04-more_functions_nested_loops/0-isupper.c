@@ -1,4 +1,5 @@
-include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
  * _isupper - a function that checks for uppercase character
@@ -7,8 +8,8 @@ include "holberton.h"
  */
 int _isupper(int c)
 {
-README.md if ((c >= A) && (c <= Z))
-README.md README.md return (1);
-README.md else
-README.md README.md return (0);
+if ((c >= 'A') && (c <= 'Z'))
+ return (1);
+ else
+ return (0);
 }
