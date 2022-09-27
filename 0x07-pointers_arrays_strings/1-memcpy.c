@@ -10,7 +10,8 @@
  *
  * Return: A pointer to the destination buffer @dest.
  */
-void *_memcpy(void *dest, const void *src, size_t n)
+void simple_print_buffer(char *buffer, unsigned int size)
+
 {
 	unsigned int index;
 	unsigned char *destination = dest;
