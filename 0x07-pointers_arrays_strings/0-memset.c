@@ -1,4 +1,3 @@
-
 #include "main.h"
 #include <stdio.h>
 
@@ -9,13 +8,23 @@
  *
  * Return: Nothing.
  */
-void *_memset(void *s, int c, size_t n)
+void simple_print_buffer(char *buffer, unsigned int size)
 {
-	unsigned int index;
-	unsigned char *memory = s, value = c;
+        unsigned int i;
 
-	for (index = 0; index < n; index++)
-		memory[index] = value;
-
-	return (memory);
+        i = 0;
+        while (i < size)
+        {
+                if (i % 10)
+                {
+                        printf(" ");
+                }
+                if (!(i % 10) && i)
+                {
+                        printf("\n");
+                }
+                printf("0x%02x", buffer[i]);
+                i++;
+        }
+        printf("\n");
 }
