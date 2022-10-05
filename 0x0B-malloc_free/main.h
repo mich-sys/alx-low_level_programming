@@ -1,7 +1,5 @@
-nes (10 sloc)  309 Bytes
-
-#ifndef FILE_HOLBERTON
-#define FILE_HOLBERTON
+#ifndef FILE_MAIN
+#define FILE_MAIN
 
 char *create_array(unsigned int size, char c);
 char *_strdup(char *str);
@@ -12,5 +10,3 @@ char *argstostr(int ac, char **av);
 char **strtow(char *str);
 
 #endif
-Footer
-© 2022 GitHub, In
