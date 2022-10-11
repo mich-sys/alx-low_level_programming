@@ -3,29 +3,15 @@
 In this project, I learned about using structures and `typedef` in C.
 
 
+File dog.h is a header file containing a new type "struct dog".
 
-## Header File :file_folder:
+File 1-init_dog.c a function that initialize a variable of type struct dog.
 
-* [dog.h](./dog.h): Header file containing definitions and prototypes for all types
-and functions written in the project.
+File 2-print_dog.c is a function that prints a struct dog.
 
-| Type/File       | Defintion/Prototype                                                      |
-| --------------- | ------------------------------------------------------------------------ |
-| `struct dog`    | <ul><li>`char *name`</li><li>`float age`</li><li>`char *owner`</li></ul> |
-| `typedef dog_t` | `struct dog`                                                             |
-| `1-init_dog.c`  | `void init_dog(struct dog *d, char *name, float age, char *owner);`      |
-| `2-print_dog.c` | `void print_dog(struct dog *d);`                                         |
-| `4-new_dog.c`   | `dog_t *new_dog(char *name, float age, char *owner);`                    |
-| `5-free_dog.c`  | `void free_dog(dog_t *d);`                                               |
+File 4-new_dog.c is a function that creates a new dog.
 
-## Tasks :page_with_curl:
-
-* **0. Django**
-  * [dog.h](./dog.h): Header file that defines a new type `struct dog` with the
-  following elements:
-    * `char *name`
-    * `float age`
-    * `char *owner`
+File 5-free_dog.c is a function that frees dogs.
 
 * **1. A dog is the only thing on earth that loves you more than you love yourself**
   * [1-init_dog.c](./1-init_dog.c): C function that initializes a variable of type `struct dog`.
